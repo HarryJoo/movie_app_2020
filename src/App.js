@@ -1,11 +1,17 @@
 import React from 'react';
-import Potato from './Potato';
+
+function Food(props) {
+  return <h3>I like {props.favorite}</h3>;
+}
 
 function App() {
   return (
     <div>
       <h1>hello world</h1>
-      <Potato />
+      <Food favorite="kimchi" />
+      <Food favorite="ramen" />
+      <Food favorite="samgiopsal" />
+      <Food favorite="chukumi" />
     </div>
     );
 }
