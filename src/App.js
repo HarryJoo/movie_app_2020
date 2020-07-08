@@ -1,7 +1,7 @@
 import React from 'react';
 
-function Food(props) {
-  return <h3>I like {props.favorite}</h3>;
+function Food({ favorite }) {
+  return <h3>I like {favorite}</h3>;
 }
 
 function App() {
